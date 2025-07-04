@@ -5,9 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maysa Farias</title>
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
-    <header id="header">HEADER SECTION</header>
+    <header>
+        <!-------------Desktop Nav------------->
+        <nav id="desktop-nav">
+            <div class="logo">Maysa Farias</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#education">Educação</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-------------Mobile Nav------------->
+        <nav id="mobile-nav">
+            <div class="logo">Maysa Farias</div>
+            <div class="hamburguer-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#hero"  onclick="toggleMenu()">Início</a></li>
+                    <li><a href="#about"  onclick="toggleMenu()">Sobre</a></li>
+                    <li><a href="#education"  onclick="toggleMenu()">Educação</a></li>
+                    <li><a href="#projects"  onclick="toggleMenu()">Projetos</a></li>
+                    <li><a href="#contact"  onclick="toggleMenu()">Contato</a></li>
+                </div>
+            </div>     
+        </nav>  
+    </header>
+
     <section id="hero">HERO SECTION</section>
     <section id="about">ABOUT SECTION</section>
     <section id="projects">PROJECTS SECTION</section>
